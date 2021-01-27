@@ -16,7 +16,7 @@ namespace Shifrator
             using (FileStream fs = new FileStream(originalFile, FileMode.Open))
             {
                 sourcesBytes = new byte[fs.Length];
-                fs.Read(sourceBytes, 0, sourceBytes.Length);
+                fs.Read(sourcesBytes, 0, sourceBytes.Length);
             }
             //Создаем одноразовый ключ для шифрования
             byte[] keyBytes = new byte[sourceBytes.Length];
